@@ -9,7 +9,7 @@ bot = TeleBot(TOKEN)
 
 
 def request2wiki(message: types.Message, save_file: str = 'requests.txt') -> str:
-    """Делает запрос на википедию записывает информацию запроса в файл (save_file) и возвращает кратокое содержание"""
+    """Делает запрос на википедию записывает информацию запроса в файл (save_file) и возвращает текст ответа"""
 
     pattern = re.compile('[а-яА-Я]')
     name_page = message.text
